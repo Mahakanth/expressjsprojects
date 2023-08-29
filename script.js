@@ -13,6 +13,7 @@ const success=require('./routers/success')
 
 
 app.use(bodyParser.urlencoded({extended: false}))
+app.use(express.static(path.join(__dirname,'public')))
 
 
 app.use(adminroutes);
